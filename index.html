@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+   <style> /* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Main Title Styling */
+.title {
+    font-size: 32px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Container for the form */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Heading Styles */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+/* Label Styling */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;
+    color: #2c3e50;
+}
+
+/* Input Fields Styling */
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+/* Focused Input Fields */
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="email"]:focus, 
+input[type="tel"]:focus, 
+input[type="number"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Form Field Styling */
+input[required] {
+    background-color: #f9f9f9;
+}
+
+/* Add space between form fields */
+br {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+        width: 90%;
+    }
+}
+</style>
+  </head>
+  <body>
+    
+    <Form action="/submit" method="post"></Form>
+      <h1 class="title">Registration Fourm: </h1>
+      <label for="user" User Name </label>
+        <input id="user" name="user" type="text" User Name placeholder="Enter your user name:"required>
+      <label for="password" password </label>
+        <input id="password"name"password" type="password" placeholder="Enter your password:"required>
+      
+      
+      
+      <h2> User Information </h2>
+      
+      <label for="fname" First Name </label>
+        <input id="fname" type="text" name="fname" First Name placeholder="Enter your first name"required>
+        <br> <br>
+      <label for="lname" Last Name </label>
+        <input id="lname" name="lname" type="text" placeholder="Enter your last name"required>
+        <br>
+        <br>
+      <label for="Email" Email</label>
+        <input id="Email" name="Email" type="text" placeholder="Enter your valid Email"required>
+      <br> <br>
+      <label for="phonrnumber" phonenumber</label>
+        <input id="phonenumber" name="phonenumber" type="tel" placeholder="Enter your valid phonenumber"required>
+        <br><br>
+      <label for="add" Address</label>
+       <input id="add" name="add" type="text" placeholder="Enter your valid Adress"required>
+       <br> <br>
+      <input type="submit" value="submit">
+        
+        
+  </body>
+</html>
